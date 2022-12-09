@@ -11,4 +11,10 @@ module "optimized-mysql-server" {
   # from the AWS console or using CLI commands. In your AWS account, the vpc-id is represented as "vpc-",
   # followed by a set of alphanumeric characters. One sample representation of a vpc-id is vpc-0a6734z932p20c2m4
   vpc_id = "vpc-02830a5c4c5dae265"
+  tags = {
+    Owner       = "Intel.Terraform.Example.App@intel.com"
+    Duration    = "8"
+    Application = "My App DB"
+  }
+
 }
