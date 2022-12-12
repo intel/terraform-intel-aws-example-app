@@ -1,20 +1,20 @@
-# Example of how to pass variable for database password:
-# terraform apply -var="db_password=..."
-# Environment variables can also be used https://www.terraform.io/language/values/variables#environment-variables
+# --------------------------------------------------------
+#                     _       _       _
+#                    (_)     | |     | |
+#                     _ _ __ | |_ ___| |
+#                    | | '_ \| __/ _ \ |
+#                    | | | | | ||  __/ |
+#                    |_|_| |_|\__\___|_|
+# --------------------------------------------------------
 
-# Provision Intel Optimized AWS MySQL server
+# Provision Intel Optimized AWS RDS MySQL server
 module "optimized-mysql-server" {
   source         = "intel/aws-mysql/intel"
-  db_password    = var.db_password
-  rds_identifier = "intel-terraform-example02"
-  # Update the vpc_id below for the VPC that this module will use. Find the vpc-id in your AWS account
-  # from the AWS console or using CLI commands. In your AWS account, the vpc-id is represented as "vpc-",
-  # followed by a set of alphanumeric characters. One sample representation of a vpc-id is vpc-0a6734z932p20c2m4
-  vpc_id = "vpc-02830a5c4c5dae265"
-  tags = {
-    Owner       = "Intel.Terraform.Example.App@intel.com"
-    Duration    = "8"
-    Application = "My App DB"
+  db_password    = var.db_password             #Required
+  rds_identifier = "intel-terraform-example02" #Required
+  vpc_id         = "vpc-02830a5c4c5dae265"     #Required
+  db_tags = {                                  #Optional  
+    Owner    = "Intel.Terraform.Example.App@intel.com"
+    Duration = "8"
   }
-
 }
