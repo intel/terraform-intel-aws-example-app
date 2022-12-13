@@ -17,5 +17,6 @@ module "optimized-mysql-server" {
   db_tags = {
     Owner    = "Intel.Terraform.Example.App@intel.com"
     Duration = "8"
+    Application = "Demo"
   }
 }
