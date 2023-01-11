@@ -17,5 +17,6 @@ module "optimized-mysql-server" {
     Owner    = "Intel.Terraform.Example.App@intel.com"
     Duration = "8"
     App      = "Demo"
+    Customer = "Credit-Suisse"
   }
 }
