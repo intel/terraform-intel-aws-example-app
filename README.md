@@ -3,9 +3,7 @@
   <img src="./images/logo-classicblue-800px.png" alt="Intel Logo" width="250"/>
 </p>
 
-# WORK IN PROGRESS
-
-## Intel® Cloud Optimization Modules for Terraform
+# Intel® Cloud Optimization Modules for Terraform
 
 © Copyright 2022, Intel Corporation
 
