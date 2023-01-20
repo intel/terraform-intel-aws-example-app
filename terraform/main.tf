@@ -14,8 +14,8 @@ module "optimized-mysql-server" {
   rds_identifier = "intel-terraform-example02" #Required
   vpc_id         = "vpc-0590e8a9422c543ae"     #Required
   db_tags = {                                  #Optional  
-    Owner    = "Intel.Terraform.Example.App@intel.com"
-    Duration = "8"
-    App      = "Demo"
+    Owner       = "Intel.Terraform.Example.App@intel.com"
+    Duration    = "8"
+    App         = "Demo"
   }
 }
