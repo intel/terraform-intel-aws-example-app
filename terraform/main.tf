@@ -12,7 +12,7 @@ module "optimized-mysql-server" {
   source         = "intel/aws-mysql/intel"
   db_password    = var.db_password             #Required
   rds_identifier = "intel-terraform-example02" #Required
-  vpc_id         = "vpc-0590e8a9422c543ae"     #Required
+  vpc_id         = "vpc-04cda22668fd25150"     #Required
   db_tags = {                                  #Optional  
     Owner       = "Intel.Terraform.Example.App@intel.com"
     Duration    = "8"
