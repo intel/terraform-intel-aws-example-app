@@ -13,7 +13,7 @@ module "optimized-mysql-server" {
   instance_class = "db.m6i.large" # Intel Xeon 3rd Generation Scalable processors (code-named Ice Lake) 
   db_password    = var.db_password
   rds_identifier = "intel-terraform-example02"
-  vpc_id         = "vpc-04cda22668fd25150"
+  vpc_id         = "vpc-0bf95158fd23f4e2e"
   db_tags = {
     Owner    = "Intel.Terraform.Example.App@intel.com"
     Duration = "8"
