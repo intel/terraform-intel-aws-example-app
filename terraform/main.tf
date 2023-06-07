@@ -17,6 +17,6 @@ module "optimized-mysql-server" {
   db_tags = {
     "App"      = "Intel Optimized Database"
     "Owner"    = "Lucas.Melo@intel.com"
-    "Duration" = "8"
+    "Duration" = "2"
   }
 }
