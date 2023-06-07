@@ -8,14 +8,15 @@
 # --------------------------------------------------------
 
 # Provision Intel Optimized AWS RDS MySQL server
+
 module "optimized-mysql-server" {
   source         = "intel/aws-mysql/intel"
-  instance_class = "db.m6i.large" # Intel Xeon 3rd Generation Scalable processors (code-named Ice Lake) 
   db_password    = var.db_password
-  rds_identifier = "intel-terraform-example03"
-  vpc_id         = "vpc-0e664499d925a8160"
+  rds_identifier = "mysql-terraform-02"
+  vpc_id = "vpc-0bf95158fd23f4e2e"
   db_tags = {
-    Owner    = "Intel.Terraform.Example.App@intel.com"
-    Duration = "8"
+    "App" = "Intel Optimized Database"
+    "Owner" = "Lucas.Melo@intel.com"
+    "Duration" = "8"
   }
 }
